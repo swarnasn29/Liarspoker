@@ -56,7 +56,7 @@ Welcome to the **Liar's Poker GameFi DApp**! This decentralized application is d
 ## 🌐 Live Deployment
 
 - **Network**: Hedera Testnet
-- **Smart Contract Address**: Available upon request.
+- **Smart Contract Address**: 0x1e8c43c3b2796e8b45b259b1f2dafc678c1fb200.  [Hedera Testnet Deployed Contract](https://hashscan.io/testnet/contract/0.0.5274025?pf=1)
 
 ---
 
