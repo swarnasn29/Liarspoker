@@ -1,18 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
-import { Press_Start_2P } from "next/font/google";
 import Link from "next/link";
 import { Users, PlusCircle } from 'lucide-react';
 
-const pixelFont = Press_Start_2P({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-pixel",
-});
 
 export default function ChooseGame() {
   return (
-    <div className={`min-h-screen bg-[#0A0A0A] ${pixelFont.variable} overflow-hidden relative`}>
+    <div className={`min-h-screen bg-[#0A0A0A] overflow-hidden relative`}>
       {/* Animated Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(152,194,61,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(152,194,61,0.03)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000,transparent)]" />
 
@@ -139,8 +133,8 @@ export default function ChooseGame() {
               className="absolute text-[#98C23D]/10 text-6xl font-bold"
               initial={{
                 opacity: 0,
-                x: Math.random() * window.innerWidth,
-                y: Math.random() * window.innerHeight,
+                x: typeof window !== 'undefined' ? Math.random() * window.innerWidth : 0,
+                y: typeof window !== 'undefined' ? Math.random() * window.innerHeight : 0
               }}
               animate={{
                 opacity: [0.1, 0.3, 0.1],
