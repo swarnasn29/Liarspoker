@@ -14,7 +14,7 @@ const jersey10 = Jersey_10({
 
 export const metadata: Metadata = {
   title: "Liars Poker",
-  description: "by Rythme Nagrani",
+  description: "by Swarna Nagrani and Ishita Mishra",
   icons: {
     icon: "/logo.png"
   }
